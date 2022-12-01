@@ -51,6 +51,20 @@ async function run(){
             const result = await userCollection.find(query).toArray();
             res.send(result);
         });
+
+        app.put("/user/admin/:id", async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id)
+        };
+            const option = { upsert: true };
+            const updateDoc = {
+            $set: {
+                userType: "admin",
+            },
+            };
+            const result = await userCollection.updateOne(query, updateDoc, option);
+            res.send(result);
+        });
     
         app.delete("/users/:id", async (req, res) => {
             const id = req.params.id;
