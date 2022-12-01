@@ -1,0 +1,32 @@
+[
+    {
+        "product" : "iPhone 14 Pro Max",
+        "resale-price" : "40,000",
+        "price" : "1,50,000",
+        "uses-year" : "2 Years",
+        "post-time" : "02 Dec 2022 | 10:30pm",
+        "photo" : "https://i.ibb.co/3T2n2BM/phone1.jpg",
+        "name" : "Abdullah Al Mahmud",
+        "location" : "Dhaka"
+    },
+    {
+        "product" : "Redmi Note 12 Pro Max",
+        "resale-price" : "25,000",
+        "price" : "35,000",
+        "uses-year" : "3 Years",
+        "post-time" : "05 Dec 2022 | 05:35am",
+        "photo" : "https://i.ibb.co/LZLyNsY/phone2.jpg",
+        "name" : "Md Sahhin Reza",
+        "location" : "Dinajpur"
+    },
+    {
+        "product" : "Google Pixel 6 Pro Max",
+        "resale-price" : "1,40,000",
+        "price" : "1,00,000",
+        "uses-year" : "2 Years",
+        "post-time" : "10 Dec 2022 | 09:45pm",
+        "photo" : "https://i.ibb.co/fXtx4pS/phone3.jpg",
+        "name" : "Mahmudullah Riyad",
+        "location" : "Dhaka"
+    }
+]
