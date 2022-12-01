@@ -22,9 +22,7 @@ async function run(){
         const productsCollection = client.db("phoneBaba").collection("products");
         const bookingCollection = client.db("phoneBaba").collection("bookings");
         const wishCollection = client.db("phoneBaba").collection("wishItems");
-        const categoriesCollection = client
-            .db("phoneBaba")
-            .collection("categories");
+        const categoriesCollection = client.db("phoneBaba").collection("categories");
     
         app.post("/users", async (req, res) => {
             const user = req.body;
@@ -59,20 +57,6 @@ async function run(){
             const query = { _id: ObjectId(id)
         };
             const result = await userCollection.deleteOne(query);
-            res.send(result);
-        });
-    
-        app.put("/user/admin/:id", async (req, res) => {
-            const id = req.params.id;
-            const query = { _id: ObjectId(id)
-        };
-            const option = { upsert: true };
-            const updateDoc = {
-            $set: {
-                userType: "admin",
-            },
-            };
-            const result = await userCollection.updateOne(query, updateDoc, option);
             res.send(result);
         });
     
